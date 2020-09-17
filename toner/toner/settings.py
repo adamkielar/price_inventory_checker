@@ -1,4 +1,4 @@
-# Scrapy settings for www project
+# Scrapy settings for toner project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'www'
+BOT_NAME = 'toner'
 
-SPIDER_MODULES = ['www.spiders']
-NEWSPIDER_MODULE = 'www.spiders'
+SPIDER_MODULES = ['toner.spiders']
+NEWSPIDER_MODULE = 'toner.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'www (+http://www.yourdomain.com)'
+#USER_AGENT = 'toner (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'www.middlewares.WwwSpiderMiddleware': 543,
+#    'toner.middlewares.TonerSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'www.middlewares.WwwDownloaderMiddleware': 543,
+#    'toner.middlewares.TonerDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'www.pipelines.WwwPipeline': 300,
+#    'toner.pipelines.TonerPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -86,3 +86,4 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+FEED_EXPORT_ENCODING = 'utf-8'
